@@ -3,19 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F177562A4F1C5D47584DCCA /* Pods_Myint_Thidar_Customer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81642B00BBB2CFA7BA4C90CB /* Pods_Myint_Thidar_Customer.framework */; };
+		B328D98B24050847007A3EB6 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98A24050847007A3EB6 /* Meal.swift */; };
+		B328D98D24050CDB007A3EB6 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98C24050CDB007A3EB6 /* NotificationModel.swift */; };
+		B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */; };
+		B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */; };
+		B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C237A2407D37F0063D7EC /* TestViewController.swift */; };
+		B34DF0BB2404C7A600707471 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */; };
 		B39133542403BB450063085C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39133532403BB450063085C /* AppDelegate.swift */; };
 		B39133562403BB450063085C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39133552403BB450063085C /* SceneDelegate.swift */; };
 		B39133582403BB450063085C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39133572403BB450063085C /* ViewController.swift */; };
 		B391335B2403BB450063085C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B39133592403BB450063085C /* Main.storyboard */; };
 		B391335D2403BB490063085C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B391335C2403BB490063085C /* Assets.xcassets */; };
 		B39133602403BB490063085C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B391335E2403BB490063085C /* LaunchScreen.storyboard */; };
+		B39601122404E4C200D7DEBB /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39601112404E4C200D7DEBB /* MealTableViewCell.swift */; };
+		B39601182404EA8A00D7DEBB /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39601172404EA8A00D7DEBB /* MealTableViewController.swift */; };
+		B3A135A424062728004D805A /* GroupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A135A324062728004D805A /* GroupResponse.swift */; };
+		B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */; };
+		B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */; };
+		B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */; };
+		B3DDD3022407C407004AAE09 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		034C39F21067E9DB83EFA839 /* Pods-Myint Thidar Customer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myint Thidar Customer.release.xcconfig"; path = "Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer.release.xcconfig"; sourceTree = "<group>"; };
+		3F7A8F8FDF367CF38AB60214 /* Pods-Myint Thidar Customer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Myint Thidar Customer.debug.xcconfig"; path = "Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer.debug.xcconfig"; sourceTree = "<group>"; };
+		81642B00BBB2CFA7BA4C90CB /* Pods_Myint_Thidar_Customer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Myint_Thidar_Customer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328D98A24050847007A3EB6 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		B328D98C24050CDB007A3EB6 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
+		B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		B33C237A2407D37F0063D7EC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		B39133502403BB450063085C /* Myint Thidar Customer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myint Thidar Customer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B39133532403BB450063085C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B39133552403BB450063085C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +47,13 @@
 		B391335C2403BB490063085C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B391335F2403BB490063085C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B39133612403BB490063085C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B39601112404E4C200D7DEBB /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
+		B39601172404EA8A00D7DEBB /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
+		B3A135A324062728004D805A /* GroupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupResponse.swift; sourceTree = "<group>"; };
+		B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
+		B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F177562A4F1C5D47584DCCA /* Pods_Myint_Thidar_Customer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		790E7A320B6C8B7EFB452658 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F7A8F8FDF367CF38AB60214 /* Pods-Myint Thidar Customer.debug.xcconfig */,
+				034C39F21067E9DB83EFA839 /* Pods-Myint Thidar Customer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9F684F613A88E3974D9344FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81642B00BBB2CFA7BA4C90CB /* Pods_Myint_Thidar_Customer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B39133472403BB440063085C = {
 			isa = PBXGroup;
 			children = (
 				B39133522403BB450063085C /* Myint Thidar Customer */,
 				B39133512403BB450063085C /* Products */,
+				790E7A320B6C8B7EFB452658 /* Pods */,
+				9F684F613A88E3974D9344FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,36 @@
 		B39133522403BB450063085C /* Myint Thidar Customer */ = {
 			isa = PBXGroup;
 			children = (
+				B3A135A224062706004D805A /* Model */,
 				B39133532403BB450063085C /* AppDelegate.swift */,
 				B39133552403BB450063085C /* SceneDelegate.swift */,
 				B39133572403BB450063085C /* ViewController.swift */,
 				B39133592403BB450063085C /* Main.storyboard */,
+				B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */,
+				B39601112404E4C200D7DEBB /* MealTableViewCell.swift */,
 				B391335C2403BB490063085C /* Assets.xcassets */,
 				B391335E2403BB490063085C /* LaunchScreen.storyboard */,
 				B39133612403BB490063085C /* Info.plist */,
+				B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */,
+				B39601172404EA8A00D7DEBB /* MealTableViewController.swift */,
+				B328D98A24050847007A3EB6 /* Meal.swift */,
+				B328D98C24050CDB007A3EB6 /* NotificationModel.swift */,
+				B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */,
+				B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */,
+				B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */,
+				B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */,
+				B33C237A2407D37F0063D7EC /* TestViewController.swift */,
 			);
 			path = "Myint Thidar Customer";
+			sourceTree = "<group>";
+		};
+		B3A135A224062706004D805A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3A135A324062728004D805A /* GroupResponse.swift */,
+				B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B39133642403BB490063085C /* Build configuration list for PBXNativeTarget "Myint Thidar Customer" */;
 			buildPhases = (
+				4EFC45138FE28D28C1062860 /* [CP] Check Pods Manifest.lock */,
 				B391334C2403BB450063085C /* Sources */,
 				B391334D2403BB450063085C /* Frameworks */,
 				B391334E2403BB450063085C /* Resources */,
+				5797C08C7D40CC0ACABD4149 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +206,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4EFC45138FE28D28C1062860 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Myint Thidar Customer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5797C08C7D40CC0ACABD4149 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B391334C2403BB450063085C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */,
 				B39133582403BB450063085C /* ViewController.swift in Sources */,
+				B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */,
+				B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */,
+				B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */,
 				B39133542403BB450063085C /* AppDelegate.swift in Sources */,
+				B328D98D24050CDB007A3EB6 /* NotificationModel.swift in Sources */,
+				B328D98B24050847007A3EB6 /* Meal.swift in Sources */,
+				B34DF0BB2404C7A600707471 /* Tab1ViewController.swift in Sources */,
+				B3DDD3022407C407004AAE09 /* QrScannerViewController.swift in Sources */,
+				B3A135A424062728004D805A /* GroupResponse.swift in Sources */,
+				B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */,
 				B39133562403BB450063085C /* SceneDelegate.swift in Sources */,
+				B39601182404EA8A00D7DEBB /* MealTableViewController.swift in Sources */,
+				B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */,
+				B39601122404E4C200D7DEBB /* MealTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		B39133652403BB490063085C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F7A8F8FDF367CF38AB60214 /* Pods-Myint Thidar Customer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +428,7 @@
 		};
 		B39133662403BB490063085C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 034C39F21067E9DB83EFA839 /* Pods-Myint Thidar Customer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
