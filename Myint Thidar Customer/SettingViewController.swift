@@ -1,22 +1,22 @@
 //
-//  TestViewController.swift
+//  SettingViewController.swift
 //  Myint Thidar Customer
 //
-//  Created by Min Htoo Tint Aung on 2/27/20.
+//  Created by Min Htoo Tint Aung on 2/28/20.
 //  Copyright © 2020 Nanolabs. All rights reserved.
 //
 
 import UIKit
 
-class TestViewController: UIViewController {
+class SettingViewController: UIViewController {
 
-    var name:NSMutableDictionary?=nil
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(name)
-        
         // Do any additional setup after loading the view.
+    }
+    @IBAction func logoutbtnclick(_ sender: UIButton) {
+    exit(0)
     }
     
 

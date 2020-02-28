@@ -110,6 +110,9 @@
                                     <action selector="signinbtnclick:forEvent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q5g-NE-xOS"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Rmd-uy-HLM">
+                                <rect key="frame" x="353" y="425" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -121,6 +124,8 @@
                             <constraint firstItem="fms-i1-Q4b" firstAttribute="top" secondItem="e6H-SK-jAg" secondAttribute="bottom" constant="20" id="GxV-J4-2NX"/>
                             <constraint firstItem="e6H-SK-jAg" firstAttribute="leading" secondItem="cMg-GT-b57" secondAttribute="leading" id="KK3-kt-gKC"/>
                             <constraint firstItem="fms-i1-Q4b" firstAttribute="width" secondItem="cMg-GT-b57" secondAttribute="width" id="Kcd-Fj-wlY"/>
+                            <constraint firstItem="Rmd-uy-HLM" firstAttribute="centerY" secondItem="fms-i1-Q4b" secondAttribute="centerY" id="MSq-gY-w8w"/>
+                            <constraint firstItem="Rmd-uy-HLM" firstAttribute="leading" secondItem="fms-i1-Q4b" secondAttribute="trailing" constant="-41" id="NBT-Bj-aIz"/>
                             <constraint firstItem="jkn-fk-F8E" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="OoW-3B-6ie"/>
                             <constraint firstItem="fms-i1-Q4b" firstAttribute="trailing" secondItem="cMg-GT-b57" secondAttribute="trailing" id="R8d-vn-fVu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cMg-GT-b57" secondAttribute="trailing" constant="20" id="dca-hw-vsm"/>
@@ -131,9 +136,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="loadingindicator" destination="Rmd-uy-HLM" id="bLf-DO-nfW"/>
                         <outlet property="scanqrbtn" destination="fms-i1-Q4b" id="DQf-g8-hwv"/>
                         <outlet property="usernametextfield" destination="e6H-SK-jAg" id="he9-c8-sI7"/>
                         <segue destination="SvQ-Y3-sbP" kind="show" identifier="identi" id="7t5-q7-iaa"/>
+                        <segue destination="4ue-bn-oPl" kind="show" identifier="tabidenti" id="375-oG-NcU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -145,11 +152,11 @@
             <objects>
                 <viewController id="Yly-O3-bGU" customClass="NotificationTableViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eUi-qh-ZFA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j1Y-br-cJn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationWidth="0.0" reuseIdentifier="notificationcell" id="Dss-fg-Cha" customClass="NotificationTableViewCell" customModule="Myint_Thidar_Customer" customModuleProvider="target">
@@ -233,7 +240,7 @@
             <objects>
                 <tableViewController id="rbs-5w-9aq" customClass="MealTableViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="196" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hbf-PM-p7D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
@@ -349,14 +356,14 @@
             <objects>
                 <viewController id="dK6-DM-imc" customClass="Tab1ViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eMv-lF-biI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyS-Ex-TZC">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SLH-m4-3A0" userLabel="mainview">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1030"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zWe-Ak-Kjl">
                                                 <rect key="frame" x="152" y="30" width="110" height="110"/>
@@ -594,9 +601,9 @@
         <!--Setting-->
         <scene sceneID="7wM-Ig-uEg">
             <objects>
-                <viewController id="CVx-5l-hs6" sceneMemberID="viewController">
+                <viewController id="CVx-5l-hs6" customClass="SettingViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Oww-DB-pTl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="UWD-rO-gm8">
@@ -615,7 +622,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ddw-pa-OTQ">
-                                <rect key="frame" x="20" y="280" width="374" height="40"/>
+                                <rect key="frame" x="20" y="278" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="7pn-6S-90s"/>
@@ -640,7 +647,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FD5-Ti-eev">
-                                <rect key="frame" x="20" y="340" width="374" height="40"/>
+                                <rect key="frame" x="20" y="338" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ejs-DT-pI4"/>
@@ -669,7 +676,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xR-u4-hyk">
-                                <rect key="frame" x="20" y="400" width="374" height="40"/>
+                                <rect key="frame" x="20" y="398" width="374" height="40"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="5yv-VN-u89"/>
@@ -693,6 +700,9 @@
                                         <real key="value" value="0.5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logoutbtnclick:" destination="CVx-5l-hs6" eventType="touchUpInside" id="1g4-KW-LF5"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -710,7 +720,7 @@
                             <constraint firstItem="ufc-Em-Ylx" firstAttribute="trailing" secondItem="4xR-u4-hyk" secondAttribute="trailing" constant="20" id="hnM-i5-JYb"/>
                             <constraint firstItem="ddw-pa-OTQ" firstAttribute="leading" secondItem="ufc-Em-Ylx" secondAttribute="leading" constant="20" id="hnW-EK-vCF"/>
                             <constraint firstItem="UWD-rO-gm8" firstAttribute="top" secondItem="ufc-Em-Ylx" secondAttribute="top" constant="70" id="jSj-hv-31t"/>
-                            <constraint firstItem="ddw-pa-OTQ" firstAttribute="top" secondItem="Es0-pu-CjQ" secondAttribute="bottom" constant="30" id="mZx-ng-qxZ"/>
+                            <constraint firstItem="ddw-pa-OTQ" firstAttribute="top" secondItem="Es0-pu-CjQ" secondAttribute="bottom" constant="28" id="mZx-ng-qxZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ufc-Em-Ylx"/>
                     </view>
@@ -822,11 +832,11 @@
             <objects>
                 <viewController id="mak-g2-XCC" customClass="HistoryViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JA6-AS-fKN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cCx-UZ-rGd">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="687"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="667"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historycell" rowHeight="233" id="LOP-A8-XAt" customClass="HistoryTableViewCell" customModule="Myint_Thidar_Customer" customModuleProvider="target">

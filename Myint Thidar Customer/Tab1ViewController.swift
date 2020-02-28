@@ -10,6 +10,7 @@ import UIKit
 import Kingfisher
 class Tab1ViewController: UIViewController {
 
+    static var user_data:NSMutableDictionary?=nil
     static var user_name:String?=nil
     static var id:String?=nil
     @IBOutlet weak var qrimg: UIImageView!
@@ -25,12 +26,9 @@ class Tab1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-                LoadJson()
-      
-        
-        
-
-    }
+        Tab1ViewController.user_name=Tab1ViewController.user_data!["user_name"]as? String
+        LoadJson(username:Tab1ViewController.user_name!)
+          }
     
     func LoadPoint(id:String) {
         let session1=URLSession.shared
@@ -50,9 +48,9 @@ class Tab1ViewController: UIViewController {
         
     }
 
-    func LoadJson()  {
+    func LoadJson(username:String)  {
         let session=URLSession.shared
-                let urlforjson=URL(string:mainurl+"/slae_invoice_userData.php?user_name=TSZ20190919_124433")!
+                let urlforjson=URL(string:mainurl+"/slae_invoice_userData.php?user_name="+username)!
                 var request=URLRequest(url:urlforjson)
                 request.httpMethod="POST"
                 let posttask=session.dataTask(with: request) { (Data, URLResponse, Error) in
