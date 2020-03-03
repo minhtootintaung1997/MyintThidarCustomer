@@ -13,6 +13,7 @@ class Tab1ViewController: UIViewController {
     static var user_data:NSMutableDictionary?=nil
     static var user_name:String?=nil
     static var id:String?=nil
+    static var profileimagepath:String?=nil
     @IBOutlet weak var qrimg: UIImageView!
     var mainurl="http://app.myinthidarjewellery.com/mtd"
     @IBOutlet weak var customernamelb: UILabel!
@@ -71,7 +72,10 @@ class Tab1ViewController: UIViewController {
                             Tab1ViewController.self.user_name=objj.object(forKey: "user_name")as?String
                             
                             Tab1ViewController.self.id=objj.object(forKey: "id")as? String
+                            Tab1ViewController.self.profileimagepath=objj.object(forKey: "profile")as? String
+                            self.profileimg.kf.setImage(with:URL(string:  self.mainurl+"/"+Tab1ViewController.profileimagepath!))
 
+                            
                         }
                         
                     }

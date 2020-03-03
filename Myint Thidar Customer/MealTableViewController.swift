@@ -9,19 +9,34 @@
 import UIKit
 
 
-class MealTableViewController: UITableViewController  {
+class MealTableViewController: UITableViewController,UISearchResultsUpdating  {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterList.removeAll()
+        var deletedlist=[Meal]()
+        deletedlist=meal
+        deletedlist.removeAll { !$0.date.contains(searchController.searchBar.text!) }
+        filterList=deletedlist
+        ordertableview.reloadData()
+    }
+    
 var mainurl="http://app.myinthidarjewellery.com/mtd"
     var meal=[Meal]()
+    var filterList=[Meal]()
     @IBOutlet var ordertableview: UITableView!
+    let searchcontroller=UISearchController(searchResultsController: nil)
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        searchcontroller.searchResultsUpdater=self
+        searchcontroller.obscuresBackgroundDuringPresentation=false
+        searchcontroller.searchBar.placeholder="Search Orders"
+        
+        self.navigationItem.searchController=searchcontroller
+        
+        definesPresentationContext=true
+        
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
-        let userN:String=Tab1ViewController.user_name!
+                let userN:String=Tab1ViewController.user_name!
         loadData(uN: userN)
     }
     
@@ -51,14 +66,25 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if(searchcontroller.isActive){
+            return filterList.count
+        }else{
+
         return meal.count
+        }
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)as!MealTableViewCell
 
-        let m=meal[indexPath.row]
+        var m:Meal
+        if(searchcontroller.isActive){
+            m=filterList[indexPath.row]
+        }else{
+            m=meal[indexPath.row]
+        }
+         
 
         cell.pointeightlb.text="Point Eight :  "+m.pointeight
         cell.datelb.text="Date : "+m.date

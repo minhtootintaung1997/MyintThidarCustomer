@@ -24,6 +24,7 @@
 		B39601122404E4C200D7DEBB /* MealTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39601112404E4C200D7DEBB /* MealTableViewCell.swift */; };
 		B39601182404EA8A00D7DEBB /* MealTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39601172404EA8A00D7DEBB /* MealTableViewController.swift */; };
 		B3A135A424062728004D805A /* GroupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A135A324062728004D805A /* GroupResponse.swift */; };
+		B3D9EB92240E6F8700AB1C7A /* NotiDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D9EB91240E6F8700AB1C7A /* NotiDetailViewController.swift */; };
 		B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */; };
 		B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */; };
 		B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */; };
@@ -52,6 +53,7 @@
 		B39601112404E4C200D7DEBB /* MealTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewCell.swift; sourceTree = "<group>"; };
 		B39601172404EA8A00D7DEBB /* MealTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTableViewController.swift; sourceTree = "<group>"; };
 		B3A135A324062728004D805A /* GroupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupResponse.swift; sourceTree = "<group>"; };
+		B3D9EB91240E6F8700AB1C7A /* NotiDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiDetailViewController.swift; sourceTree = "<group>"; };
 		B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				B39133612403BB490063085C /* Info.plist */,
 				B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */,
 				B39601172404EA8A00D7DEBB /* MealTableViewController.swift */,
+				B3D9EB91240E6F8700AB1C7A /* NotiDetailViewController.swift */,
 				B328D98A24050847007A3EB6 /* Meal.swift */,
 				B328D98C24050CDB007A3EB6 /* NotificationModel.swift */,
 				B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */,
@@ -261,6 +264,7 @@
 				B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */,
 				B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */,
 				B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */,
+				B3D9EB92240E6F8700AB1C7A /* NotiDetailViewController.swift in Sources */,
 				B317CAB72408D45300046C22 /* SettingViewController.swift in Sources */,
 				B39133542403BB450063085C /* AppDelegate.swift in Sources */,
 				B328D98D24050CDB007A3EB6 /* NotificationModel.swift in Sources */,

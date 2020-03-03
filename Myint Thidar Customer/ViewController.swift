@@ -35,12 +35,14 @@ class ViewController: UIViewController {
     }
     }
     @IBAction func signinbtnclick(_ sender: UIButton, forEvent event: UIEvent) {
-        let usernamestr:String=usernametextfield.text!
-       
-        if usernamestr.count==0{
+        var usernamestr:String?
+            usernamestr=usernametextfield.text
+               
+        if usernamestr!.count==0{
             self.showSimpleAlert(message:"Enter user name")
         } else {
-             checkLogin(un: usernamestr)
+            
+             checkLogin(un: usernamestr!)
         }
     }
     

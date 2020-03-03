@@ -30,11 +30,11 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
         let session1=URLSession.shared
         let loadpointtask=session1.dataTask(with: URL(string: mainurl+"/read_notification.php?user_name="+uN )!) { (pointdata, urlresponse, err) in
             if let responseObj=try? JSONSerialization.jsonObject(with: pointdata!, options: [])as? [[String:Any]]{
-                print(responseObj)
+                //print(responseObj)
                             
                 DispatchQueue.main.sync {
                     for ob in responseObj{
-                        self.notificationarray.append(NotificationModel(title: ob["title"]as!String,date: ob["noti_date"]as! String))
+                        self.notificationarray.append(NotificationModel(title: ob["title"]as!String,date: ob["noti_date"]as! String, noti: ob["noti_one"]as! String))
                         
                     }
                     self.notificationtableview.reloadData()
@@ -68,6 +68,12 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
         return cell
     }
     
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(notificationarray[indexPath.row].title)
+        NotiDetailViewController.titlestr=notificationarray[indexPath.row].title
+        NotiDetailViewController.descstr=notificationarray[indexPath.row].noti_one
+        self.performSegue(withIdentifier: "notidenti", sender: self)
+    }
 
     /*
     // Override to support conditional editing of the table view.
@@ -108,10 +114,10 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+ */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+      //  if(segue.description is Noti
     }
-    */
+    
 
 }

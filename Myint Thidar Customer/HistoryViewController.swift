@@ -16,23 +16,45 @@ import UIKit
 //
 
 import UIKit
-class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
+class HistoryViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterHistory.removeAll()
+        var deletedlist=[HistoryModel]()
+        deletedlist=historyarr
+        deletedlist.removeAll { !$0.date.contains(searchController.searchBar.text!) }
+        filterHistory=deletedlist
+        historytableview.reloadData()
+        
+    }
+    var filterHistory=[HistoryModel]()
 var mainurl="http://app.myinthidarjewellery.com/mtd"
 var historyarr=[HistoryModel]()
+    let searchcontroller=UISearchController(searchResultsController: nil)
     @IBOutlet weak var historytableview: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
+        
+        searchcontroller.searchResultsUpdater=self
+        searchcontroller.obscuresBackgroundDuringPresentation=false
+        searchcontroller.searchBar.placeholder="Search History"
+        self.navigationItem.searchController=searchcontroller
+        
+        definesPresentationContext=true
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+         //self.navigationItem.rightBarButtonItem = self.editButtonItem
         self.historytableview.delegate=self
                self.historytableview.dataSource=self
        let userN:String=Tab1ViewController.user_name!
         LoadNoti(uN: userN)
+    }
+    var isSearchBarEmpty: Bool {
+      return searchcontroller.searchBar.text?.isEmpty ?? true
     }
     func LoadNoti(uN:String)  {
         print(uN)
@@ -40,7 +62,7 @@ var historyarr=[HistoryModel]()
         let session1=URLSession.shared
         let loadpointtask=session1.dataTask(with: URL(string: mainurl+"/salehistory.php?user_name="+uN )!) { (pointdata, urlresponse, err) in
             if let responseObj=try? JSONSerialization.jsonObject(with: pointdata!, options: [])as? [[String:Any]]{
-                print(responseObj)
+                //print(responseObj)
                             
                 DispatchQueue.main.sync {
                     for ob in responseObj{
@@ -63,14 +85,25 @@ var historyarr=[HistoryModel]()
      
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return historyarr.count
+        if(searchcontroller.isActive){
+            return self.filterHistory.count
+        }else{
+            return historyarr.count
+        }
+        
     }
 
   
      func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "historycell", for: indexPath)as! HistoryTableViewCell
 
-        let h=historyarr[indexPath.row]
+        var h:HistoryModel
+        if(searchcontroller.isActive){
+            h=filterHistory[indexPath.row]
+        }else{
+            h=historyarr[indexPath.row]
+        }
+        
         cell.datelb.text="Date : "+h.date
         cell.gramlb.text="Gram : "+h.gram
         cell.pointeightlb.text="Point Eight : "+h.pointeight
@@ -81,6 +114,7 @@ var historyarr=[HistoryModel]()
     }
     
 
+   
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
