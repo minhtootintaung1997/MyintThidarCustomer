@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import MaterialComponents
+import Kingfisher
 
 class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
@@ -16,8 +16,8 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
     @IBOutlet var profileimagesetting: UIImageView!
         var mainurl="http://app.myinthidarjewellery.com/mtd"
     @IBOutlet weak var loading: UIActivityIndicatorView!
-    @IBOutlet weak var comfirmcodetextfield: MDCFilledTextField!
-    @IBOutlet weak var changeprofilebtn: MDCRaisedButton!
+    @IBOutlet weak var comfirmcodetextfield: UITextField!
+    @IBOutlet weak var changeprofilebtn: UIButton!
     var profileimagepath:String?=nil
     var userN:String?=nil
     override func viewDidLoad() {
@@ -34,6 +34,10 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
 
        
     }
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+           view.endEditing(true)
+           super.touchesBegan(touches, with: event)
+       }
     func ShowIndicator(boo:Bool){
         DispatchQueue.main.async {
             if boo{
@@ -46,7 +50,7 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }
     }
     }
-    @IBAction func changecomfirmcodebtn(_ sender: MDCButton) {
+    @IBAction func changecomfirmcodebtn(_ sender: UIButton) {
         let codestr:String=comfirmcodetextfield.text!
         if(!codestr.elementsEqual("")){
             changeCode(un: userN!, code: codestr)
@@ -59,7 +63,7 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
     exit(0)
     }
     
-    @IBAction func changeProfilebtnClick(_ sender: MDCButton) {
+    @IBAction func changeProfilebtnClick(_ sender: UIButton) {
         
         imagepicker.allowsEditing=false
         imagepicker.sourceType = .photoLibrary
@@ -71,14 +75,26 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         print("selected")
         if let pickerimg=info[UIImagePickerController.InfoKey.originalImage]as? UIImage{
             
-            
             DispatchQueue.main.async {
+                
                 self.profileimagesetting.contentMode = .scaleAspectFit
                 self.profileimagesetting.image=pickerimg
+                
+                let imgstr:String=self.convertImageToBase64(image:pickerimg)
+               
+
+                self.changeProfile(un: self.userN!, code: imgstr)
+
+               
             }
         }
         dismiss(animated: true, completion: nil)
         
+    }
+    func convertImageToBase64(image: UIImage) -> String {
+        let imageData:NSData = image.jpegData(compressionQuality: 0.4)! as NSData
+           let strBase64 = imageData.base64EncodedString(options: .lineLength64Characters)
+           return strBase64
     }
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         dismiss(animated: true, completion: nil)
@@ -87,6 +103,7 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
     func changeCode(un:String,code:String) {
         ShowIndicator(boo: true)
         let session=URLSession.shared
+        
         let task=session.dataTask(with: URL(string: mainurl+"/changePinCode.php?user_name="+un+"&code="+code)!) { (Data, URLResponse, Error) in
             if let json=try? JSONSerialization.jsonObject(with: Data!, options:.mutableContainers)as? NSMutableDictionary{
                 self.ShowIndicator(boo: false)
@@ -108,6 +125,54 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         }
         task.resume()
     }
+    
+    func changeProfile(un:String,code:String) {
+
+        let session=URLSession.shared
+        let json = [
+            "user_name": un,
+            "image": code
+        ]
+        let updata=try! JSONSerialization.data(withJSONObject: json, options: [])
+        let urll=URL(string:mainurl+"/update_customer_profile.php")
+        var requesturl=URLRequest(url: urll!)
+        requesturl.httpMethod="POST"
+        requesturl.httpBody=updata
+        
+
+                let t2 = session.dataTask(with: requesturl) { (Data, URLResponse, Error) in
+            DispatchQueue.main.async {
+
+                if  let dataString = String(data: Data!, encoding: .utf8) {
+                    print(dataString)
+                }
+            }
+        }
+        
+                t2.resume()
+        
+//        let task=session.dataTask(with: URL(string: mainurl+"/changePinCode.php?user_name="+un+"&code="+code)!) { (Data, URLResponse, Error) in
+//            if let json=try? JSONSerialization.jsonObject(with: Data!, options:.mutableContainers)as? NSMutableDictionary{
+//                self.ShowIndicator(boo: false)
+//                if json["response"]as!String=="ok"{
+//                    DispatchQueue.main.async {
+//                        self.comfirmcodetextfield.text=nil
+//                        self.showSimpleAlert(message: "Success", title:"Code Changed")
+//                    }
+//
+//
+//                }else{
+//                    DispatchQueue.main.async {
+//                        self.showSimpleAlert(message: "Error", title:"Something wrong")
+//                    }
+//
+//                }
+//
+//            }
+//        }
+//        task.resume()
+    }
+
     func showSimpleAlert(message:String,title:String) {
 
             

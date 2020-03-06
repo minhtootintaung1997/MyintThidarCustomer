@@ -44,6 +44,11 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
         //TSZ20190919_124433
                 let session=URLSession.shared
         let loadorder=session.dataTask(with: URL(string: mainurl+"/orderhistory.php?user_name="+uN)!) { (Data, URLResponse, Error) in
+            
+            if let res=URLResponse as? HTTPURLResponse{
+                if res.statusCode==200{
+                    
+                
             if let responseobj=try?JSONSerialization.jsonObject(with: Data!, options: [])as? [[String:Any]]{
                 DispatchQueue.main.sync {
                     for ob in responseobj{
@@ -53,6 +58,8 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
                 }
             }
         }
+                }
+                }
         loadorder.resume()
     }
     

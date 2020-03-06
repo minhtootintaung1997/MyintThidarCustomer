@@ -29,6 +29,10 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
         
         let session1=URLSession.shared
         let loadpointtask=session1.dataTask(with: URL(string: mainurl+"/read_notification.php?user_name="+uN )!) { (pointdata, urlresponse, err) in
+            if let res=urlresponse as? HTTPURLResponse{
+                if res.statusCode==200{
+                    
+                
             if let responseObj=try? JSONSerialization.jsonObject(with: pointdata!, options: [])as? [[String:Any]]{
                 //print(responseObj)
                             
@@ -43,6 +47,9 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
             }
 
         }
+                }
+            
+                }
         loadpointtask.resume()
         
        

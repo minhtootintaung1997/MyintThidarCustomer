@@ -8,8 +8,10 @@
 
 import UIKit
 import Kingfisher
+import MaterialComponents.MaterialCards
 class Tab1ViewController: UIViewController {
 
+    @IBOutlet weak var cardview: UIView!
     static var user_data:NSMutableDictionary?=nil
     static var user_name:String?=nil
     static var id:String?=nil
@@ -27,7 +29,9 @@ class Tab1ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Tab1ViewController.user_name=Tab1ViewController.user_data!["user_name"]as? String
+        
+      
+Tab1ViewController.user_name=Tab1ViewController.user_data!["user_name"]as? String
         LoadJson(username:Tab1ViewController.user_name!)
           }
     
@@ -55,6 +59,11 @@ class Tab1ViewController: UIViewController {
                 var request=URLRequest(url:urlforjson)
                 request.httpMethod="POST"
                 let posttask=session.dataTask(with: request) { (Data, URLResponse, Error) in
+                    
+                    if let res=URLResponse as? HTTPURLResponse{
+                        if res.statusCode==200{
+                            
+                        
                     if let objj=try? JSONSerialization.jsonObject(with: Data!, options: .mutableContainers)as? NSMutableDictionary{
                         
                         self.LoadPoint(id: objj.object(forKey: "id")as! String)
@@ -83,15 +92,18 @@ class Tab1ViewController: UIViewController {
                                 
 
                 }
+                        }
+                        }
                 posttask.resume()
         
     }
     func LoadPhoto(path:String)  {
     print(mainurl+"/"+path)
+        
           let url = URL(string: mainurl+"/"+path)
-              qrimg.kf.setImage(with: url)
+        qrimg.kf.setImage(with: url)
               
-    }
-    
+        
+            }
 
 }

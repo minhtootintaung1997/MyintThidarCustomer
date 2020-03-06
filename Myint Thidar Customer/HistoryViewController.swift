@@ -61,6 +61,12 @@ var historyarr=[HistoryModel]()
         
         let session1=URLSession.shared
         let loadpointtask=session1.dataTask(with: URL(string: mainurl+"/salehistory.php?user_name="+uN )!) { (pointdata, urlresponse, err) in
+            
+
+            if let res=urlresponse as? HTTPURLResponse{
+                if(res.statusCode==200){
+                    
+                
             if let responseObj=try? JSONSerialization.jsonObject(with: pointdata!, options: [])as? [[String:Any]]{
                 //print(responseObj)
                             
@@ -75,6 +81,8 @@ var historyarr=[HistoryModel]()
             }
 
         }
+                }
+                }
         loadpointtask.resume()
         
        

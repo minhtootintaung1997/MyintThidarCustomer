@@ -13,6 +13,7 @@
 		B328D98D24050CDB007A3EB6 /* NotificationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98C24050CDB007A3EB6 /* NotificationModel.swift */; };
 		B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */; };
 		B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */; };
+		B33368772412487B00CD0085 /* ComfirmPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */; };
 		B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C237A2407D37F0063D7EC /* TestViewController.swift */; };
 		B34DF0BB2404C7A600707471 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */; };
 		B39133542403BB450063085C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39133532403BB450063085C /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		B328D98C24050CDB007A3EB6 /* NotificationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationModel.swift; sourceTree = "<group>"; };
 		B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfirmPasswordViewController.swift; sourceTree = "<group>"; };
 		B33C237A2407D37F0063D7EC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		B39133502403BB450063085C /* Myint Thidar Customer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myint Thidar Customer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +133,7 @@
 				B317CAB62408D45300046C22 /* SettingViewController.swift */,
 				B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */,
 				B33C237A2407D37F0063D7EC /* TestViewController.swift */,
+				B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */,
 			);
 			path = "Myint Thidar Customer";
 			sourceTree = "<group>";
@@ -155,7 +158,7 @@
 				B391334C2403BB450063085C /* Sources */,
 				B391334D2403BB450063085C /* Frameworks */,
 				B391334E2403BB450063085C /* Resources */,
-				5797C08C7D40CC0ACABD4149 /* [CP] Embed Pods Frameworks */,
+				BD19E73D10BE95FE417E8B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,7 +238,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5797C08C7D40CC0ACABD4149 /* [CP] Embed Pods Frameworks */ = {
+		BD19E73D10BE95FE417E8B04 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,6 +264,7 @@
 			files = (
 				B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */,
 				B39133582403BB450063085C /* ViewController.swift in Sources */,
+				B33368772412487B00CD0085 /* ComfirmPasswordViewController.swift in Sources */,
 				B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */,
 				B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */,
 				B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */,
@@ -421,7 +425,9 @@
 			baseConfigurationReference = 3F7A8F8FDF367CF38AB60214 /* Pods-Myint Thidar Customer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 462XCK7G46;
 				INFOPLIST_FILE = "Myint Thidar Customer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -429,6 +435,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "minhtootintaung.Myint-Thidar-Customer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -439,7 +446,9 @@
 			baseConfigurationReference = 034C39F21067E9DB83EFA839 /* Pods-Myint Thidar Customer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 462XCK7G46;
 				INFOPLIST_FILE = "Myint Thidar Customer/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,6 +456,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "minhtootintaung.Myint-Thidar-Customer";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

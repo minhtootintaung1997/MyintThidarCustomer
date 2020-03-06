@@ -20,8 +20,12 @@ class ViewController: UIViewController {
         
         ShowIndicator(boo: false)
         
+        
     }
-    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+        super.touchesBegan(touches, with: event)
+    }
     func ShowIndicator(boo:Bool){
         DispatchQueue.main.async {
             if boo{
