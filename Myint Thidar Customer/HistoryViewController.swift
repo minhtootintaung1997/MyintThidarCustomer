@@ -48,6 +48,7 @@ var historyarr=[HistoryModel]()
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
          //self.navigationItem.rightBarButtonItem = self.editButtonItem
+        historytableview.separatorColor=UIColor.white
         self.historytableview.delegate=self
                self.historytableview.dataSource=self
        let userN:String=Tab1ViewController.user_name!

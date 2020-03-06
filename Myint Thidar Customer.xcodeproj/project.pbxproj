@@ -14,6 +14,7 @@
 		B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */; };
 		B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */; };
 		B33368772412487B00CD0085 /* ComfirmPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */; };
+		B333687924125F9F00CD0085 /* CardviewCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = B333687824125F9F00CD0085 /* CardviewCustom.swift */; };
 		B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33C237A2407D37F0063D7EC /* TestViewController.swift */; };
 		B34DF0BB2404C7A600707471 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */; };
 		B39133542403BB450063085C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39133532403BB450063085C /* AppDelegate.swift */; };
@@ -42,6 +43,7 @@
 		B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
 		B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComfirmPasswordViewController.swift; sourceTree = "<group>"; };
+		B333687824125F9F00CD0085 /* CardviewCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardviewCustom.swift; sourceTree = "<group>"; };
 		B33C237A2407D37F0063D7EC /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
 		B39133502403BB450063085C /* Myint Thidar Customer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myint Thidar Customer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				B3A135A224062706004D805A /* Model */,
 				B39133532403BB450063085C /* AppDelegate.swift */,
 				B39133552403BB450063085C /* SceneDelegate.swift */,
+				B333687824125F9F00CD0085 /* CardviewCustom.swift */,
 				B39133572403BB450063085C /* ViewController.swift */,
 				B39133592403BB450063085C /* Main.storyboard */,
 				B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */,
@@ -277,6 +280,7 @@
 				B3DDD3022407C407004AAE09 /* QrScannerViewController.swift in Sources */,
 				B3A135A424062728004D805A /* GroupResponse.swift in Sources */,
 				B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */,
+				B333687924125F9F00CD0085 /* CardviewCustom.swift in Sources */,
 				B39133562403BB450063085C /* SceneDelegate.swift in Sources */,
 				B39601182404EA8A00D7DEBB /* MealTableViewController.swift in Sources */,
 				B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */,

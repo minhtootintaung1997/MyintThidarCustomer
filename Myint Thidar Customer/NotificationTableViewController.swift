@@ -20,6 +20,7 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        notificationtableview.separatorColor=UIColor.white
         self.notificationtableview.delegate=self
                self.notificationtableview.dataSource=self
         let userN:String=Tab1ViewController.id!

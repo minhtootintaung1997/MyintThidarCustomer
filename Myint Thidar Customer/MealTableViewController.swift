@@ -27,6 +27,7 @@ var mainurl="http://app.myinthidarjewellery.com/mtd"
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        ordertableview.separatorColor=UIColor.white
         searchcontroller.searchResultsUpdater=self
         searchcontroller.obscuresBackgroundDuringPresentation=false
         searchcontroller.searchBar.placeholder="Search Orders"
