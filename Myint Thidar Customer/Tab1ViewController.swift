@@ -82,7 +82,7 @@ Tab1ViewController.user_name=Tab1ViewController.user_data!["user_name"]as? Strin
                             
                             Tab1ViewController.self.id=objj.object(forKey: "id")as? String
                             Tab1ViewController.self.profileimagepath=objj.object(forKey: "profile")as? String
-                            self.profileimg.kf.setImage(with:URL(string:  self.mainurl+"/"+Tab1ViewController.profileimagepath!))
+                            self.profileimg.kf.setImage(with:URL(string:  self.mainurl+"/"+Tab1ViewController.profileimagepath!),options: [.memoryCacheExpiration(.seconds(10))])
 
                             
                         }

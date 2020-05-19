@@ -8,6 +8,8 @@
 
 import UIKit
 import Kingfisher
+import Alamofire
+import SwiftyJSON
 
 class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
@@ -126,52 +128,72 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         task.resume()
     }
     
+//    func changeProfile(un:String,code:String) {
+//
+////        let session=URLSession.shared
+////        let json = [
+////            "user_name": un,
+////            "image": code
+////        ]
+////        print(un)
+////        print(code)
+////        let updata=try! JSONSerialization.data(withJSONObject: json, options: [])
+////        let urll=URL(string:"http://app.myinthidarjewellery.com/api/customer/profile/update?")
+////        var requesturl=URLRequest(url: urll!)
+////        requesturl.httpMethod="POST"
+////        requesturl.httpBody=updata
+////
+////
+////                let t2 = session.dataTask(with: requesturl) { (Data, URLResponse, Error) in
+////            DispatchQueue.main.async {
+////
+////                if  let dataString = String(data: Data!, encoding: .utf8) {
+////                    print(dataString)
+////                }
+////            }
+////        }
+////
+////                t2.resume()
+//
+//
+//
+//
+//
+//    }
+    
     func changeProfile(un:String,code:String) {
 
-        let session=URLSession.shared
-        let json = [
-            "user_name": un,
-            "image": code
-        ]
-        let updata=try! JSONSerialization.data(withJSONObject: json, options: [])
-        let urll=URL(string:mainurl+"/update_customer_profile.php")
-        var requesturl=URLRequest(url: urll!)
-        requesturl.httpMethod="POST"
-        requesturl.httpBody=updata
-        
-
-                let t2 = session.dataTask(with: requesturl) { (Data, URLResponse, Error) in
-            DispatchQueue.main.async {
-
-                if  let dataString = String(data: Data!, encoding: .utf8) {
-                    print(dataString)
-                }
+     let parameters: [String: Any] = [
+                "image" : code,
+                "user_name" : un
+                
+                
+            ]
+            
+            Alamofire.request("http://167.71.193.226/api/customer/profile/update", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseString{ response in
+                print(response)
+                
+//                if let result = response.result.value {
+//
+//                let JSONS = result as! NSDictionary
+//
+//                let statue = JSONS.object(forKey: "status")
+//
+//               print(statue!)
+//
+//                    //if let json = response.data {
+//                            //   let data = try? JSON(data: json)
+//
+//
+//                           //}
+//
+//
+//
+//                    }
+                
             }
-        }
-        
-                t2.resume()
-        
-//        let task=session.dataTask(with: URL(string: mainurl+"/changePinCode.php?user_name="+un+"&code="+code)!) { (Data, URLResponse, Error) in
-//            if let json=try? JSONSerialization.jsonObject(with: Data!, options:.mutableContainers)as? NSMutableDictionary{
-//                self.ShowIndicator(boo: false)
-//                if json["response"]as!String=="ok"{
-//                    DispatchQueue.main.async {
-//                        self.comfirmcodetextfield.text=nil
-//                        self.showSimpleAlert(message: "Success", title:"Code Changed")
-//                    }
-//
-//
-//                }else{
-//                    DispatchQueue.main.async {
-//                        self.showSimpleAlert(message: "Error", title:"Something wrong")
-//                    }
-//
-//                }
-//
-//            }
-//        }
-//        task.resume()
-    }
+    
+            }
 
     func showSimpleAlert(message:String,title:String) {
 
