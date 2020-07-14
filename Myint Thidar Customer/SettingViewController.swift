@@ -128,38 +128,7 @@ class SettingViewController: UIViewController,UIImagePickerControllerDelegate,UI
         task.resume()
     }
     
-//    func changeProfile(un:String,code:String) {
-//
-////        let session=URLSession.shared
-////        let json = [
-////            "user_name": un,
-////            "image": code
-////        ]
-////        print(un)
-////        print(code)
-////        let updata=try! JSONSerialization.data(withJSONObject: json, options: [])
-////        let urll=URL(string:"http://app.myinthidarjewellery.com/api/customer/profile/update?")
-////        var requesturl=URLRequest(url: urll!)
-////        requesturl.httpMethod="POST"
-////        requesturl.httpBody=updata
-////
-////
-////                let t2 = session.dataTask(with: requesturl) { (Data, URLResponse, Error) in
-////            DispatchQueue.main.async {
-////
-////                if  let dataString = String(data: Data!, encoding: .utf8) {
-////                    print(dataString)
-////                }
-////            }
-////        }
-////
-////                t2.resume()
-//
-//
-//
-//
-//
-//    }
+
     
     func changeProfile(un:String,code:String) {
 
