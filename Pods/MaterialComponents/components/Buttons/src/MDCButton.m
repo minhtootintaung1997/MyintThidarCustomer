@@ -28,8 +28,8 @@
 
 // Specified in Material Guidelines
 // https://material.io/guidelines/layout/metrics-keylines.html#metrics-keylines-touch-target-size
-static const CGFloat MDCButtonMinimumTouchTargetHeight = 40;
-static const CGFloat MDCButtonMinimumTouchTargetWidth = 40;
+static const CGFloat MDCButtonMinimumTouchTargetHeight = 48;
+static const CGFloat MDCButtonMinimumTouchTargetWidth = 48;
 static const CGFloat MDCButtonDefaultCornerRadius = 2.0;
 
 static const NSTimeInterval MDCButtonAnimationDuration = 0.2;

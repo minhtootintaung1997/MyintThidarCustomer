@@ -1,7 +1,15 @@
 ${PODS_ROOT}/Target Support Files/Pods-Myint Thidar Customer/Pods-Myint Thidar Customer-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework
+${BUILT_PRODUCTS_DIR}/BadgeControl/BadgeControl.framework
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
+${BUILT_PRODUCTS_DIR}/ImageSlideshow/ImageSlideshow.framework
 ${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework
+${BUILT_PRODUCTS_DIR}/LSDialogViewController/LSDialogViewController.framework
 ${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework
 ${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework
+${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework
 ${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework
+${BUILT_PRODUCTS_DIR}/SwiftSVG/SwiftSVG.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
+${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework

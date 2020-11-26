@@ -31,6 +31,80 @@
 		B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */; };
 		B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */; };
 		B3DDD3022407C407004AAE09 /* QrScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */; };
+		EF1B708624E92072008F9005 /* Detailnewarrivals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B708524E92071008F9005 /* Detailnewarrivals.swift */; };
+		EF1B708824EA5C13008F9005 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B708724EA5C13008F9005 /* Toast.swift */; };
+		EF1B708A24EA8ADD008F9005 /* QrscannerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B708924EA8ADD008F9005 /* QrscannerController.swift */; };
+		EF1B708C24EA8FC3008F9005 /* CheckuserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B708B24EA8FC3008F9005 /* CheckuserController.swift */; };
+		EF1B708E24EA99F7008F9005 /* WelcomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1B708D24EA99F7008F9005 /* WelcomeController.swift */; };
+		EF1F3AE024D2875E00FB665D /* DetailPlatinumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3ADF24D2875E00FB665D /* DetailPlatinumCell.swift */; };
+		EF1F3AE224D287F800FB665D /* PlatinumDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AE124D287F800FB665D /* PlatinumDetailController.swift */; };
+		EF1F3AE424D28BF000FB665D /* DetailPlatinumCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AE324D28BF000FB665D /* DetailPlatinumCategories.swift */; };
+		EF1F3AE624D2AEA200FB665D /* DiamondInstockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AE524D2AEA200FB665D /* DiamondInstockController.swift */; };
+		EF1F3AE824D2BE0000FB665D /* PlatinumInstockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AE724D2BE0000FB665D /* PlatinumInstockController.swift */; };
+		EF1F3AEA24D2C92E00FB665D /* BasketController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AE924D2C92E00FB665D /* BasketController.swift */; };
+		EF1F3AEC24D2CE5F00FB665D /* BasketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AEB24D2CE5F00FB665D /* BasketCell.swift */; };
+		EF1F3AEE24D2CE7300FB665D /* Basket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF1F3AED24D2CE7300FB665D /* Basket.swift */; };
+		EF262BF324EE32B500CB832D /* CustomView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF262BF224EE32B400CB832D /* CustomView.storyboard */; };
+		EF262BF524EE33D800CB832D /* PopUpActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF262BF424EE33D800CB832D /* PopUpActionViewController.swift */; };
+		EF29781124E133A90065AA55 /* AddtobasketDiamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29781024E133A90065AA55 /* AddtobasketDiamond.swift */; };
+		EF29781424E190910065AA55 /* AddtobasketPlatinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF29781324E190910065AA55 /* AddtobasketPlatinum.swift */; };
+		EF382090252204580017010E /* DiamondOrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF38208F252204580017010E /* DiamondOrderHistory.swift */; };
+		EF382093252205DC0017010E /* PlatinumOrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF382092252205DC0017010E /* PlatinumOrderHistory.swift */; };
+		EF382096252206E10017010E /* GoldOrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF382095252206E10017010E /* GoldOrderHistory.swift */; };
+		EF4AF87924BDC151002EC08B /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4AF87824BDC151002EC08B /* SettingController.swift */; };
+		EF4FE5DB24D093EB000E171C /* DiamondDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FE5DA24D093EB000E171C /* DiamondDetailController.swift */; };
+		EF4FE5DD24D09FBB000E171C /* DetailDiamondCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FE5DC24D09FBB000E171C /* DetailDiamondCategories.swift */; };
+		EF4FE5DF24D0A551000E171C /* DetailDiamondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4FE5DE24D0A551000E171C /* DetailDiamondCell.swift */; };
+		EF50E16724E2B01000877928 /* OrderHistoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E16624E2B01000877928 /* OrderHistoryController.swift */; };
+		EF50E16924E3B13500877928 /* OrderHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E16824E3B13500877928 /* OrderHistoryCell.swift */; };
+		EF50E16B24E3B14700877928 /* OrderHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E16A24E3B14700877928 /* OrderHistory.swift */; };
+		EF50E16D24E4FF5200877928 /* OrderPlacedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF50E16C24E4FF5100877928 /* OrderPlacedController.swift */; };
+		EF5617D224D2DDD300879D57 /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5617D124D2DDD300879D57 /* DBHelper.swift */; };
+		EF5617D424D3BEC800879D57 /* AddtobasketGold.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF5617D324D3BEC800879D57 /* AddtobasketGold.swift */; };
+		EF749EE724FE2DE2002D6E8B /* ChangeprofileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF749EE624FE2DE2002D6E8B /* ChangeprofileController.swift */; };
+		EF74B77124D83FE600D144BC /* WishlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74B77024D83FE600D144BC /* WishlistController.swift */; };
+		EF74B77324D8475B00D144BC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF74B77224D8475B00D144BC /* HomeViewController.swift */; };
+		EF7B51A024C940C000B71F20 /* GoldOnStockController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B519F24C940C000B71F20 /* GoldOnStockController.swift */; };
+		EF7B51A224C9512200B71F20 /* GoldCustomOrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF7B51A124C9512200B71F20 /* GoldCustomOrderController.swift */; };
+		EF997CE724F8C5D200779E95 /* DiamondhistorydetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF997CE624F8C5D200779E95 /* DiamondhistorydetailController.swift */; };
+		EF997CE924F8C5F100779E95 /* PlatinumhistorydetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF997CE824F8C5F100779E95 /* PlatinumhistorydetailController.swift */; };
+		EF997CEB24F8C68300779E95 /* GoldcustomhistorydetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF997CEA24F8C68300779E95 /* GoldcustomhistorydetailController.swift */; };
+		EFA39E5624EF86DC007F377F /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFA39E5524EF86DC007F377F /* ChangePassword.storyboard */; };
+		EFA39E5824EF8868007F377F /* ChangePasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E5724EF8868007F377F /* ChangePasswordController.swift */; };
+		EFA39E5A24EF8FBE007F377F /* TutorialController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E5924EF8FBE007F377F /* TutorialController.swift */; };
+		EFA39E5C24EF9046007F377F /* TutorialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E5B24EF9046007F377F /* TutorialCell.swift */; };
+		EFA39E5E24EF9081007F377F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E5D24EF9081007F377F /* Tutorial.swift */; };
+		EFA39E6024EF9832007F377F /* CustomerSupportCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E5F24EF9832007F377F /* CustomerSupportCell.swift */; };
+		EFA39E6224EF9878007F377F /* CustomerSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6124EF9878007F377F /* CustomerSupport.swift */; };
+		EFA39E6424EF98B2007F377F /* CustomerSupportController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6324EF98B2007F377F /* CustomerSupportController.swift */; };
+		EFA39E6624EF9C8E007F377F /* ChangelanguageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6524EF9C8E007F377F /* ChangelanguageController.swift */; };
+		EFA39E6824EFBC4C007F377F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6724EFBC4C007F377F /* NotificationController.swift */; };
+		EFA39E6A24EFBCAC007F377F /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6924EFBCAC007F377F /* NotificationCell.swift */; };
+		EFA39E6C24EFBCEA007F377F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6B24EFBCEA007F377F /* Notifications.swift */; };
+		EFA39E6E24EFC421007F377F /* PurchaselistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6D24EFC421007F377F /* PurchaselistController.swift */; };
+		EFA39E7024EFC44D007F377F /* Purchaselist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E6F24EFC44D007F377F /* Purchaselist.swift */; };
+		EFA39E7224EFC722007F377F /* PurchaselistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E7124EFC722007F377F /* PurchaselistCell.swift */; };
+		EFA39E7424EFD30B007F377F /* OrderlistController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E7324EFD30B007F377F /* OrderlistController.swift */; };
+		EFA39E7624EFD354007F377F /* Orderlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E7524EFD354007F377F /* Orderlist.swift */; };
+		EFA39E7824EFD3E6007F377F /* OrderlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFA39E7724EFD3E6007F377F /* OrderlistCell.swift */; };
+		EFC69A1024C169F300513434 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A0F24C169F300513434 /* CategoriesCell.swift */; };
+		EFC69A1224C16A0300513434 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1124C16A0300513434 /* Categories.swift */; };
+		EFC69A1624C1AA4200513434 /* NewArrivals.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1524C1AA4200513434 /* NewArrivals.swift */; };
+		EFC69A1824C1ABC200513434 /* NewArrivalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1724C1ABC200513434 /* NewArrivalsCell.swift */; };
+		EFC69A1A24C1B63800513434 /* WishlistCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1924C1B63800513434 /* WishlistCell.swift */; };
+		EFC69A1C24C1B64500513434 /* Wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1B24C1B64500513434 /* Wishlist.swift */; };
+		EFC69A2024C6A53C00513434 /* PlatinumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A1F24C6A53C00513434 /* PlatinumCell.swift */; };
+		EFC69A2224C6A71400513434 /* DiamondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2124C6A71400513434 /* DiamondCell.swift */; };
+		EFC69A2424C6A89500513434 /* GoldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2324C6A89500513434 /* GoldCell.swift */; };
+		EFC69A2624C6F8D400513434 /* Diamond.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2524C6F8D400513434 /* Diamond.swift */; };
+		EFC69A2824C6FD8500513434 /* Platinum.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2724C6FD8500513434 /* Platinum.swift */; };
+		EFC69A2A24C7F2AB00513434 /* DetailCategoriesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2924C7F2AB00513434 /* DetailCategoriesController.swift */; };
+		EFC69A2C24C7F6B000513434 /* DetailCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2B24C7F6B000513434 /* DetailCategories.swift */; };
+		EFC69A2E24C7F74F00513434 /* DetailCategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC69A2D24C7F74F00513434 /* DetailCategoriesCell.swift */; };
+		EFCCF19F24F8234100D3BD28 /* GoldhistoryDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCCF19E24F8234100D3BD28 /* GoldhistoryDetailController.swift */; };
+		EFCE127C24DD1030008FC3DB /* NewSettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE127B24DD1030008FC3DB /* NewSettingController.swift */; };
+		EFCE127E24DD1879008FC3DB /* DiamondBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE127D24DD1879008FC3DB /* DiamondBasket.swift */; };
+		EFCE128024DD1AB0008FC3DB /* PlatinumBasket.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCE127F24DD1AB0008FC3DB /* PlatinumBasket.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +136,80 @@
 		B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModel.swift; sourceTree = "<group>"; };
 		B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrScannerViewController.swift; sourceTree = "<group>"; };
+		EF1B708524E92071008F9005 /* Detailnewarrivals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailnewarrivals.swift; sourceTree = "<group>"; };
+		EF1B708724EA5C13008F9005 /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		EF1B708924EA8ADD008F9005 /* QrscannerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrscannerController.swift; sourceTree = "<group>"; };
+		EF1B708B24EA8FC3008F9005 /* CheckuserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckuserController.swift; sourceTree = "<group>"; };
+		EF1B708D24EA99F7008F9005 /* WelcomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeController.swift; sourceTree = "<group>"; };
+		EF1F3ADF24D2875E00FB665D /* DetailPlatinumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlatinumCell.swift; sourceTree = "<group>"; };
+		EF1F3AE124D287F800FB665D /* PlatinumDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumDetailController.swift; sourceTree = "<group>"; };
+		EF1F3AE324D28BF000FB665D /* DetailPlatinumCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPlatinumCategories.swift; sourceTree = "<group>"; };
+		EF1F3AE524D2AEA200FB665D /* DiamondInstockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondInstockController.swift; sourceTree = "<group>"; };
+		EF1F3AE724D2BE0000FB665D /* PlatinumInstockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumInstockController.swift; sourceTree = "<group>"; };
+		EF1F3AE924D2C92E00FB665D /* BasketController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketController.swift; sourceTree = "<group>"; };
+		EF1F3AEB24D2CE5F00FB665D /* BasketCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketCell.swift; sourceTree = "<group>"; };
+		EF1F3AED24D2CE7300FB665D /* Basket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basket.swift; sourceTree = "<group>"; };
+		EF262BF224EE32B400CB832D /* CustomView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomView.storyboard; sourceTree = "<group>"; };
+		EF262BF424EE33D800CB832D /* PopUpActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpActionViewController.swift; sourceTree = "<group>"; };
+		EF29781024E133A90065AA55 /* AddtobasketDiamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtobasketDiamond.swift; sourceTree = "<group>"; };
+		EF29781324E190910065AA55 /* AddtobasketPlatinum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtobasketPlatinum.swift; sourceTree = "<group>"; };
+		EF38208F252204580017010E /* DiamondOrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondOrderHistory.swift; sourceTree = "<group>"; };
+		EF382092252205DC0017010E /* PlatinumOrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumOrderHistory.swift; sourceTree = "<group>"; };
+		EF382095252206E10017010E /* GoldOrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldOrderHistory.swift; sourceTree = "<group>"; };
+		EF4AF87824BDC151002EC08B /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
+		EF4FE5DA24D093EB000E171C /* DiamondDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondDetailController.swift; sourceTree = "<group>"; };
+		EF4FE5DC24D09FBB000E171C /* DetailDiamondCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiamondCategories.swift; sourceTree = "<group>"; };
+		EF4FE5DE24D0A551000E171C /* DetailDiamondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDiamondCell.swift; sourceTree = "<group>"; };
+		EF50E16624E2B01000877928 /* OrderHistoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryController.swift; sourceTree = "<group>"; };
+		EF50E16824E3B13500877928 /* OrderHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistoryCell.swift; sourceTree = "<group>"; };
+		EF50E16A24E3B14700877928 /* OrderHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderHistory.swift; sourceTree = "<group>"; };
+		EF50E16C24E4FF5100877928 /* OrderPlacedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderPlacedController.swift; sourceTree = "<group>"; };
+		EF5617D124D2DDD300879D57 /* DBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		EF5617D324D3BEC800879D57 /* AddtobasketGold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddtobasketGold.swift; sourceTree = "<group>"; };
+		EF749EE624FE2DE2002D6E8B /* ChangeprofileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeprofileController.swift; sourceTree = "<group>"; };
+		EF74B77024D83FE600D144BC /* WishlistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistController.swift; sourceTree = "<group>"; };
+		EF74B77224D8475B00D144BC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EF7B519F24C940C000B71F20 /* GoldOnStockController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldOnStockController.swift; sourceTree = "<group>"; };
+		EF7B51A124C9512200B71F20 /* GoldCustomOrderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldCustomOrderController.swift; sourceTree = "<group>"; };
+		EF997CE624F8C5D200779E95 /* DiamondhistorydetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondhistorydetailController.swift; sourceTree = "<group>"; };
+		EF997CE824F8C5F100779E95 /* PlatinumhistorydetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumhistorydetailController.swift; sourceTree = "<group>"; };
+		EF997CEA24F8C68300779E95 /* GoldcustomhistorydetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldcustomhistorydetailController.swift; sourceTree = "<group>"; };
+		EFA39E5524EF86DC007F377F /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
+		EFA39E5724EF8868007F377F /* ChangePasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordController.swift; sourceTree = "<group>"; };
+		EFA39E5924EF8FBE007F377F /* TutorialController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialController.swift; sourceTree = "<group>"; };
+		EFA39E5B24EF9046007F377F /* TutorialCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCell.swift; sourceTree = "<group>"; };
+		EFA39E5D24EF9081007F377F /* Tutorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
+		EFA39E5F24EF9832007F377F /* CustomerSupportCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportCell.swift; sourceTree = "<group>"; };
+		EFA39E6124EF9878007F377F /* CustomerSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupport.swift; sourceTree = "<group>"; };
+		EFA39E6324EF98B2007F377F /* CustomerSupportController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerSupportController.swift; sourceTree = "<group>"; };
+		EFA39E6524EF9C8E007F377F /* ChangelanguageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangelanguageController.swift; sourceTree = "<group>"; };
+		EFA39E6724EFBC4C007F377F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		EFA39E6924EFBCAC007F377F /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		EFA39E6B24EFBCEA007F377F /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		EFA39E6D24EFC421007F377F /* PurchaselistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaselistController.swift; sourceTree = "<group>"; };
+		EFA39E6F24EFC44D007F377F /* Purchaselist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchaselist.swift; sourceTree = "<group>"; };
+		EFA39E7124EFC722007F377F /* PurchaselistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaselistCell.swift; sourceTree = "<group>"; };
+		EFA39E7324EFD30B007F377F /* OrderlistController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlistController.swift; sourceTree = "<group>"; };
+		EFA39E7524EFD354007F377F /* Orderlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orderlist.swift; sourceTree = "<group>"; };
+		EFA39E7724EFD3E6007F377F /* OrderlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderlistCell.swift; sourceTree = "<group>"; };
+		EFC69A0F24C169F300513434 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		EFC69A1124C16A0300513434 /* Categories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		EFC69A1524C1AA4200513434 /* NewArrivals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArrivals.swift; sourceTree = "<group>"; };
+		EFC69A1724C1ABC200513434 /* NewArrivalsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewArrivalsCell.swift; sourceTree = "<group>"; };
+		EFC69A1924C1B63800513434 /* WishlistCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistCell.swift; sourceTree = "<group>"; };
+		EFC69A1B24C1B64500513434 /* Wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wishlist.swift; sourceTree = "<group>"; };
+		EFC69A1F24C6A53C00513434 /* PlatinumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumCell.swift; sourceTree = "<group>"; };
+		EFC69A2124C6A71400513434 /* DiamondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondCell.swift; sourceTree = "<group>"; };
+		EFC69A2324C6A89500513434 /* GoldCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldCell.swift; sourceTree = "<group>"; };
+		EFC69A2524C6F8D400513434 /* Diamond.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diamond.swift; sourceTree = "<group>"; };
+		EFC69A2724C6FD8500513434 /* Platinum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Platinum.swift; sourceTree = "<group>"; };
+		EFC69A2924C7F2AB00513434 /* DetailCategoriesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoriesController.swift; sourceTree = "<group>"; };
+		EFC69A2B24C7F6B000513434 /* DetailCategories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategories.swift; sourceTree = "<group>"; };
+		EFC69A2D24C7F74F00513434 /* DetailCategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCategoriesCell.swift; sourceTree = "<group>"; };
+		EFCCF19E24F8234100D3BD28 /* GoldhistoryDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoldhistoryDetailController.swift; sourceTree = "<group>"; };
+		EFCE127B24DD1030008FC3DB /* NewSettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSettingController.swift; sourceTree = "<group>"; };
+		EFCE127D24DD1879008FC3DB /* DiamondBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiamondBasket.swift; sourceTree = "<group>"; };
+		EFCE127F24DD1AB0008FC3DB /* PlatinumBasket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatinumBasket.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,29 +262,15 @@
 		B39133522403BB450063085C /* Myint Thidar Customer */ = {
 			isa = PBXGroup;
 			children = (
+				EF4AF87724BDB9F3002EC08B /* Storyboard */,
+				EF4AF87624BDB9E3002EC08B /* Util */,
+				EF4AF87524BDB977002EC08B /* Cell */,
+				EF4AF87424BDB96D002EC08B /* Controller */,
 				B3A135A224062706004D805A /* Model */,
 				B39133532403BB450063085C /* AppDelegate.swift */,
 				B39133552403BB450063085C /* SceneDelegate.swift */,
-				B333687824125F9F00CD0085 /* CardviewCustom.swift */,
-				B39133572403BB450063085C /* ViewController.swift */,
-				B39133592403BB450063085C /* Main.storyboard */,
-				B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */,
-				B39601112404E4C200D7DEBB /* MealTableViewCell.swift */,
 				B391335C2403BB490063085C /* Assets.xcassets */,
-				B391335E2403BB490063085C /* LaunchScreen.storyboard */,
 				B39133612403BB490063085C /* Info.plist */,
-				B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */,
-				B39601172404EA8A00D7DEBB /* MealTableViewController.swift */,
-				B3D9EB91240E6F8700AB1C7A /* NotiDetailViewController.swift */,
-				B328D98A24050847007A3EB6 /* Meal.swift */,
-				B328D98C24050CDB007A3EB6 /* NotificationModel.swift */,
-				B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */,
-				B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */,
-				B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */,
-				B317CAB62408D45300046C22 /* SettingViewController.swift */,
-				B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */,
-				B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */,
-				B33C237A2407D37F0063D7EC /* TestViewController.swift */,
 			);
 			path = "Myint Thidar Customer";
 			sourceTree = "<group>";
@@ -144,10 +278,130 @@
 		B3A135A224062706004D805A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B328D98C24050CDB007A3EB6 /* NotificationModel.swift */,
 				B3A135A324062728004D805A /* GroupResponse.swift */,
 				B3DDD2F92407A48C004AAE09 /* HistoryModel.swift */,
+				B328D98A24050847007A3EB6 /* Meal.swift */,
+				EFC69A1B24C1B64500513434 /* Wishlist.swift */,
+				EFC69A1124C16A0300513434 /* Categories.swift */,
+				EFC69A2524C6F8D400513434 /* Diamond.swift */,
+				EFC69A2724C6FD8500513434 /* Platinum.swift */,
+				EFC69A1524C1AA4200513434 /* NewArrivals.swift */,
+				EFC69A2B24C7F6B000513434 /* DetailCategories.swift */,
+				EF4FE5DC24D09FBB000E171C /* DetailDiamondCategories.swift */,
+				EF1F3AE324D28BF000FB665D /* DetailPlatinumCategories.swift */,
+				EF1F3AED24D2CE7300FB665D /* Basket.swift */,
+				EFCE127D24DD1879008FC3DB /* DiamondBasket.swift */,
+				EFCE127F24DD1AB0008FC3DB /* PlatinumBasket.swift */,
+				EF5617D324D3BEC800879D57 /* AddtobasketGold.swift */,
+				EF29781024E133A90065AA55 /* AddtobasketDiamond.swift */,
+				EF29781324E190910065AA55 /* AddtobasketPlatinum.swift */,
+				EF50E16A24E3B14700877928 /* OrderHistory.swift */,
+				EF1B708524E92071008F9005 /* Detailnewarrivals.swift */,
+				EFA39E5D24EF9081007F377F /* Tutorial.swift */,
+				EFA39E6124EF9878007F377F /* CustomerSupport.swift */,
+				EFA39E6B24EFBCEA007F377F /* Notifications.swift */,
+				EFA39E6F24EFC44D007F377F /* Purchaselist.swift */,
+				EFA39E7524EFD354007F377F /* Orderlist.swift */,
+				EF38208F252204580017010E /* DiamondOrderHistory.swift */,
+				EF382092252205DC0017010E /* PlatinumOrderHistory.swift */,
+				EF382095252206E10017010E /* GoldOrderHistory.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EF4AF87424BDB96D002EC08B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B39133572403BB450063085C /* ViewController.swift */,
+				B34DF0BA2404C7A600707471 /* Tab1ViewController.swift */,
+				B3DDD3012407C407004AAE09 /* QrScannerViewController.swift */,
+				B39601172404EA8A00D7DEBB /* MealTableViewController.swift */,
+				B3D9EB91240E6F8700AB1C7A /* NotiDetailViewController.swift */,
+				B317CAB62408D45300046C22 /* SettingViewController.swift */,
+				B33368762412487B00CD0085 /* ComfirmPasswordViewController.swift */,
+				B3DDD2FF2407ADD8004AAE09 /* HistoryViewController.swift */,
+				B33C237A2407D37F0063D7EC /* TestViewController.swift */,
+				B328D98E24050CF5007A3EB6 /* NotificationTableViewController.swift */,
+				EF4AF87824BDC151002EC08B /* SettingController.swift */,
+				EF7B519F24C940C000B71F20 /* GoldOnStockController.swift */,
+				EF7B51A124C9512200B71F20 /* GoldCustomOrderController.swift */,
+				EFC69A2924C7F2AB00513434 /* DetailCategoriesController.swift */,
+				EF4FE5DA24D093EB000E171C /* DiamondDetailController.swift */,
+				EF1F3AE124D287F800FB665D /* PlatinumDetailController.swift */,
+				EF1F3AE524D2AEA200FB665D /* DiamondInstockController.swift */,
+				EF1F3AE724D2BE0000FB665D /* PlatinumInstockController.swift */,
+				EF1F3AE924D2C92E00FB665D /* BasketController.swift */,
+				EF74B77024D83FE600D144BC /* WishlistController.swift */,
+				EF74B77224D8475B00D144BC /* HomeViewController.swift */,
+				EFCE127B24DD1030008FC3DB /* NewSettingController.swift */,
+				EF50E16624E2B01000877928 /* OrderHistoryController.swift */,
+				EF50E16C24E4FF5100877928 /* OrderPlacedController.swift */,
+				EF1B708924EA8ADD008F9005 /* QrscannerController.swift */,
+				EF1B708B24EA8FC3008F9005 /* CheckuserController.swift */,
+				EF1B708D24EA99F7008F9005 /* WelcomeController.swift */,
+				EF262BF424EE33D800CB832D /* PopUpActionViewController.swift */,
+				EFA39E5724EF8868007F377F /* ChangePasswordController.swift */,
+				EFA39E5924EF8FBE007F377F /* TutorialController.swift */,
+				EFA39E6324EF98B2007F377F /* CustomerSupportController.swift */,
+				EFA39E6524EF9C8E007F377F /* ChangelanguageController.swift */,
+				EFA39E6724EFBC4C007F377F /* NotificationController.swift */,
+				EFA39E6D24EFC421007F377F /* PurchaselistController.swift */,
+				EFA39E7324EFD30B007F377F /* OrderlistController.swift */,
+				EFCCF19E24F8234100D3BD28 /* GoldhistoryDetailController.swift */,
+				EF997CEA24F8C68300779E95 /* GoldcustomhistorydetailController.swift */,
+				EF997CE624F8C5D200779E95 /* DiamondhistorydetailController.swift */,
+				EF997CE824F8C5F100779E95 /* PlatinumhistorydetailController.swift */,
+				EF749EE624FE2DE2002D6E8B /* ChangeprofileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EF4AF87524BDB977002EC08B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B39601112404E4C200D7DEBB /* MealTableViewCell.swift */,
+				B3DDD2F72407A3D9004AAE09 /* HistoryTableViewCell.swift */,
+				B328D99024050D07007A3EB6 /* NotificationTableViewCell.swift */,
+				EFC69A2D24C7F74F00513434 /* DetailCategoriesCell.swift */,
+				EFC69A0F24C169F300513434 /* CategoriesCell.swift */,
+				EFC69A1924C1B63800513434 /* WishlistCell.swift */,
+				EFC69A1F24C6A53C00513434 /* PlatinumCell.swift */,
+				EFC69A2124C6A71400513434 /* DiamondCell.swift */,
+				EFC69A2324C6A89500513434 /* GoldCell.swift */,
+				EFC69A1724C1ABC200513434 /* NewArrivalsCell.swift */,
+				EF4FE5DE24D0A551000E171C /* DetailDiamondCell.swift */,
+				EF1F3ADF24D2875E00FB665D /* DetailPlatinumCell.swift */,
+				EF1F3AEB24D2CE5F00FB665D /* BasketCell.swift */,
+				EF50E16824E3B13500877928 /* OrderHistoryCell.swift */,
+				EFA39E5B24EF9046007F377F /* TutorialCell.swift */,
+				EFA39E5F24EF9832007F377F /* CustomerSupportCell.swift */,
+				EFA39E6924EFBCAC007F377F /* NotificationCell.swift */,
+				EFA39E7124EFC722007F377F /* PurchaselistCell.swift */,
+				EFA39E7724EFD3E6007F377F /* OrderlistCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EF4AF87624BDB9E3002EC08B /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				B333687824125F9F00CD0085 /* CardviewCustom.swift */,
+				EF5617D124D2DDD300879D57 /* DBHelper.swift */,
+				EF1B708724EA5C13008F9005 /* Toast.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		EF4AF87724BDB9F3002EC08B /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B391335E2403BB490063085C /* LaunchScreen.storyboard */,
+				B39133592403BB450063085C /* Main.storyboard */,
+				EF262BF224EE32B400CB832D /* CustomView.storyboard */,
+				EFA39E5524EF86DC007F377F /* ChangePassword.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +466,8 @@
 			files = (
 				B39133602403BB490063085C /* LaunchScreen.storyboard in Resources */,
 				B391335D2403BB490063085C /* Assets.xcassets in Resources */,
+				EF262BF324EE32B500CB832D /* CustomView.storyboard in Resources */,
+				EFA39E5624EF86DC007F377F /* ChangePassword.storyboard in Resources */,
 				B391335B2403BB450063085C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,24 +521,96 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1F3AE024D2875E00FB665D /* DetailPlatinumCell.swift in Sources */,
+				EFC69A1C24C1B64500513434 /* Wishlist.swift in Sources */,
+				EFA39E5E24EF9081007F377F /* Tutorial.swift in Sources */,
+				EF4FE5DF24D0A551000E171C /* DetailDiamondCell.swift in Sources */,
 				B328D98F24050CF5007A3EB6 /* NotificationTableViewController.swift in Sources */,
 				B39133582403BB450063085C /* ViewController.swift in Sources */,
+				EF1B708A24EA8ADD008F9005 /* QrscannerController.swift in Sources */,
+				EFC69A1A24C1B63800513434 /* WishlistCell.swift in Sources */,
+				EFA39E5C24EF9046007F377F /* TutorialCell.swift in Sources */,
+				EFA39E6624EF9C8E007F377F /* ChangelanguageController.swift in Sources */,
+				EF749EE724FE2DE2002D6E8B /* ChangeprofileController.swift in Sources */,
 				B33368772412487B00CD0085 /* ComfirmPasswordViewController.swift in Sources */,
+				EFC69A2C24C7F6B000513434 /* DetailCategories.swift in Sources */,
+				EF997CE724F8C5D200779E95 /* DiamondhistorydetailController.swift in Sources */,
+				EF1F3AEE24D2CE7300FB665D /* Basket.swift in Sources */,
+				EFC69A1824C1ABC200513434 /* NewArrivalsCell.swift in Sources */,
+				EFCE128024DD1AB0008FC3DB /* PlatinumBasket.swift in Sources */,
 				B33C237B2407D37F0063D7EC /* TestViewController.swift in Sources */,
 				B3DDD2F82407A3D9004AAE09 /* HistoryTableViewCell.swift in Sources */,
+				EF1F3AE824D2BE0000FB665D /* PlatinumInstockController.swift in Sources */,
+				EFA39E6C24EFBCEA007F377F /* Notifications.swift in Sources */,
 				B3DDD3002407ADD8004AAE09 /* HistoryViewController.swift in Sources */,
+				EF4AF87924BDC151002EC08B /* SettingController.swift in Sources */,
+				EFCCF19F24F8234100D3BD28 /* GoldhistoryDetailController.swift in Sources */,
+				EF5617D424D3BEC800879D57 /* AddtobasketGold.swift in Sources */,
+				EF382093252205DC0017010E /* PlatinumOrderHistory.swift in Sources */,
+				EF1F3AEA24D2C92E00FB665D /* BasketController.swift in Sources */,
 				B3D9EB92240E6F8700AB1C7A /* NotiDetailViewController.swift in Sources */,
+				EF7B51A224C9512200B71F20 /* GoldCustomOrderController.swift in Sources */,
+				EF74B77324D8475B00D144BC /* HomeViewController.swift in Sources */,
 				B317CAB72408D45300046C22 /* SettingViewController.swift in Sources */,
 				B39133542403BB450063085C /* AppDelegate.swift in Sources */,
+				EF997CE924F8C5F100779E95 /* PlatinumhistorydetailController.swift in Sources */,
+				EF382096252206E10017010E /* GoldOrderHistory.swift in Sources */,
 				B328D98D24050CDB007A3EB6 /* NotificationModel.swift in Sources */,
+				EFCE127E24DD1879008FC3DB /* DiamondBasket.swift in Sources */,
+				EFA39E5A24EF8FBE007F377F /* TutorialController.swift in Sources */,
+				EFC69A2E24C7F74F00513434 /* DetailCategoriesCell.swift in Sources */,
+				EFC69A2424C6A89500513434 /* GoldCell.swift in Sources */,
+				EFC69A2A24C7F2AB00513434 /* DetailCategoriesController.swift in Sources */,
 				B328D98B24050847007A3EB6 /* Meal.swift in Sources */,
+				EFA39E6A24EFBCAC007F377F /* NotificationCell.swift in Sources */,
+				EFA39E7024EFC44D007F377F /* Purchaselist.swift in Sources */,
+				EFA39E6E24EFC421007F377F /* PurchaselistController.swift in Sources */,
+				EFC69A1024C169F300513434 /* CategoriesCell.swift in Sources */,
 				B34DF0BB2404C7A600707471 /* Tab1ViewController.swift in Sources */,
+				EF1F3AEC24D2CE5F00FB665D /* BasketCell.swift in Sources */,
 				B3DDD3022407C407004AAE09 /* QrScannerViewController.swift in Sources */,
+				EFC69A2824C6FD8500513434 /* Platinum.swift in Sources */,
+				EF1B708824EA5C13008F9005 /* Toast.swift in Sources */,
+				EFC69A2624C6F8D400513434 /* Diamond.swift in Sources */,
+				EF262BF524EE33D800CB832D /* PopUpActionViewController.swift in Sources */,
+				EF50E16B24E3B14700877928 /* OrderHistory.swift in Sources */,
 				B3A135A424062728004D805A /* GroupResponse.swift in Sources */,
+				EF5617D224D2DDD300879D57 /* DBHelper.swift in Sources */,
+				EF997CEB24F8C68300779E95 /* GoldcustomhistorydetailController.swift in Sources */,
+				EF382090252204580017010E /* DiamondOrderHistory.swift in Sources */,
+				EF1F3AE224D287F800FB665D /* PlatinumDetailController.swift in Sources */,
+				EFA39E5824EF8868007F377F /* ChangePasswordController.swift in Sources */,
+				EF7B51A024C940C000B71F20 /* GoldOnStockController.swift in Sources */,
+				EFC69A1224C16A0300513434 /* Categories.swift in Sources */,
+				EF1B708624E92072008F9005 /* Detailnewarrivals.swift in Sources */,
+				EF4FE5DD24D09FBB000E171C /* DetailDiamondCategories.swift in Sources */,
+				EF1F3AE624D2AEA200FB665D /* DiamondInstockController.swift in Sources */,
+				EFA39E7424EFD30B007F377F /* OrderlistController.swift in Sources */,
+				EFA39E6024EF9832007F377F /* CustomerSupportCell.swift in Sources */,
 				B328D99124050D07007A3EB6 /* NotificationTableViewCell.swift in Sources */,
+				EFA39E6424EF98B2007F377F /* CustomerSupportController.swift in Sources */,
 				B333687924125F9F00CD0085 /* CardviewCustom.swift in Sources */,
+				EFC69A2224C6A71400513434 /* DiamondCell.swift in Sources */,
+				EF4FE5DB24D093EB000E171C /* DiamondDetailController.swift in Sources */,
+				EFCE127C24DD1030008FC3DB /* NewSettingController.swift in Sources */,
+				EF29781424E190910065AA55 /* AddtobasketPlatinum.swift in Sources */,
+				EFA39E7624EFD354007F377F /* Orderlist.swift in Sources */,
+				EFA39E7824EFD3E6007F377F /* OrderlistCell.swift in Sources */,
+				EF50E16924E3B13500877928 /* OrderHistoryCell.swift in Sources */,
 				B39133562403BB450063085C /* SceneDelegate.swift in Sources */,
+				EF50E16724E2B01000877928 /* OrderHistoryController.swift in Sources */,
+				EF50E16D24E4FF5200877928 /* OrderPlacedController.swift in Sources */,
+				EFC69A1624C1AA4200513434 /* NewArrivals.swift in Sources */,
+				EF74B77124D83FE600D144BC /* WishlistController.swift in Sources */,
+				EF29781124E133A90065AA55 /* AddtobasketDiamond.swift in Sources */,
+				EF1B708C24EA8FC3008F9005 /* CheckuserController.swift in Sources */,
+				EF1B708E24EA99F7008F9005 /* WelcomeController.swift in Sources */,
+				EF1F3AE424D28BF000FB665D /* DetailPlatinumCategories.swift in Sources */,
+				EFA39E6824EFBC4C007F377F /* NotificationController.swift in Sources */,
+				EFA39E7224EFC722007F377F /* PurchaselistCell.swift in Sources */,
 				B39601182404EA8A00D7DEBB /* MealTableViewController.swift in Sources */,
+				EFA39E6224EF9878007F377F /* CustomerSupport.swift in Sources */,
+				EFC69A2024C6A53C00513434 /* PlatinumCell.swift in Sources */,
 				B3DDD2FA2407A48C004AAE09 /* HistoryModel.swift in Sources */,
 				B39601122404E4C200D7DEBB /* MealTableViewCell.swift in Sources */,
 			);
@@ -431,13 +759,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 462XCK7G46;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5772S6SAG5;
 				INFOPLIST_FILE = "Myint Thidar Customer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minhtootintaung.myintthidarcustomer;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanolabs.asia.myinthidarcustomers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -452,13 +783,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3K58732G3W;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5772S6SAG5;
 				INFOPLIST_FILE = "Myint Thidar Customer/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.minhtootintaung.myintthidarcustomer.nanolab;
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nanolabs.asia.myinthidarcustomers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;

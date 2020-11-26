@@ -1,8 +1,18 @@
 PODS:
   - Alamofire (4.9.1)
-  - Kingfisher (5.13.2):
-    - Kingfisher/Core (= 5.13.2)
-  - Kingfisher/Core (5.13.2)
+  - AlamofireImage (3.6.0):
+    - Alamofire (~> 4.9)
+  - BadgeControl (1.2.1)
+  - Cosmos (22.1.0)
+  - ImageSlideshow (1.8.3):
+    - ImageSlideshow/Core (= 1.8.3)
+  - ImageSlideshow/Alamofire (1.8.3):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.8.3)
+  - Kingfisher (3.2.4)
+  - LSDialogViewController (4.0)
+  - MarqueeLabel/Swift (3.2.1)
   - MaterialComponents/AnimationTiming (107.0.0)
   - MaterialComponents/Availability (107.0.0)
   - MaterialComponents/Buttons (107.0.0):
@@ -40,6 +50,24 @@ PODS:
   - MaterialComponents/private/Icons/ic_check_circle (107.0.0):
     - MaterialComponents/private/Icons/Base
   - MaterialComponents/private/Math (107.0.0)
+  - "MaterialComponents/private/TextControlsPrivate+BaseStyle (107.0.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+FilledStyle (107.0.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle (107.0.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Math
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+  - "MaterialComponents/private/TextControlsPrivate+Shared (107.0.0)":
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/private/Math
+    - "MaterialComponents/TextControls+Enums"
   - MaterialComponents/Ripple (107.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/private/Color
@@ -51,6 +79,31 @@ PODS:
     - MaterialComponents/private/Color
     - MaterialComponents/private/Math
     - MaterialComponents/ShadowLayer
+  - "MaterialComponents/TextControls+BaseTextAreas (107.0.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+BaseTextFields (107.0.0)":
+    - "MaterialComponents/private/TextControlsPrivate+BaseStyle"
+    - "MaterialComponents/private/TextControlsPrivate+Shared"
+    - MDFInternationalization
+  - "MaterialComponents/TextControls+Enums (107.0.0)"
+  - "MaterialComponents/TextControls+FilledTextAreas (107.0.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
+    - "MaterialComponents/TextControls+BaseTextAreas"
+  - "MaterialComponents/TextControls+FilledTextFields (107.0.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+FilledStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextAreas (107.0.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextFields (107.0.0)":
+    - MaterialComponents/Availability
+    - "MaterialComponents/private/TextControlsPrivate+OutlinedStyle"
+    - "MaterialComponents/TextControls+BaseTextFields"
   - MaterialComponents/TextFields (107.0.0):
     - MaterialComponents/AnimationTiming
     - MaterialComponents/Buttons
@@ -64,33 +117,63 @@ PODS:
     - MaterialComponents/private/Math
   - MDFInternationalization (2.0.0)
   - MDFTextAccessibility (2.0.0)
+  - SwiftSVG (2.3.2)
   - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
-  - Kingfisher (~> 5.0)
+  - BadgeControl
+  - Cosmos (~> 22.1)
+  - ImageSlideshow (~> 1.8.3)
+  - ImageSlideshow/Alamofire
+  - Kingfisher (~> 3.2.3)
+  - LSDialogViewController
+  - MarqueeLabel/Swift
   - MaterialComponents/Buttons
   - MaterialComponents/Cards
+  - "MaterialComponents/TextControls+FilledTextAreas"
+  - "MaterialComponents/TextControls+FilledTextFields"
+  - "MaterialComponents/TextControls+OutlinedTextAreas"
+  - "MaterialComponents/TextControls+OutlinedTextFields"
   - MaterialComponents/TextFields
+  - SwiftSVG (~> 2.0)
   - SwiftyJSON
+  - Toast-Swift (~> 5.0.1)
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - AlamofireImage
+    - BadgeControl
+    - Cosmos
+    - ImageSlideshow
     - Kingfisher
+    - LSDialogViewController
+    - MarqueeLabel
     - MaterialComponents
     - MDFInternationalization
     - MDFTextAccessibility
+    - SwiftSVG
     - SwiftyJSON
+    - Toast-Swift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
-  Kingfisher: d342c8354c10c3d85a27d6d4c42c41285924b898
+  AlamofireImage: be9963c6582d68b39e89191f64c82a7d7bf40fdd
+  BadgeControl: 67036e7f586930bba15084dbf89ebce7aa2f2bc2
+  Cosmos: 2795b36ad4bbea1af3050d6d65576ed63875f86a
+  ImageSlideshow: 4694d7d699a1549582e7cc631fb392d8f91630f3
+  Kingfisher: 8d80f39da403cd9c9ee11984e1655f4d6a566cdb
+  LSDialogViewController: ab7dd9a3e3facf95b386b7209401ac96bbdc3514
+  MarqueeLabel: 2daf039bf916937c8a4c9adfc13577cc5e51b4ce
   MaterialComponents: 68cf56c02292bd241c4a78bc17259318a238aae0
   MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
   MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  SwiftSVG: ca7f64e403b8ea7ea8eba8c823b83ba4a059834c
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
 
-PODFILE CHECKSUM: d369cfbe7bdf4092f86541eed3fbcf4f4b8847e8
+PODFILE CHECKSUM: ee8a281d0bf900f6875be657cccbbc8e6a6bd7d7
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.9.1

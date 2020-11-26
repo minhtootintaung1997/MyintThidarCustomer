@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pop Up Action View Controller-->
+        <scene sceneID="uQY-At-7o1">
+            <objects>
+                <viewController storyboardIdentifier="PopUpActionViewController" id="sX9-hv-Ime" customClass="PopUpActionViewController" customModule="Myint_Thidar_Customer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q12-hZ-Xcx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nVl-p1-yLd">
+                                <rect key="frame" x="38" y="279" width="338" height="338"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="My_Gallery-3" translatesAutoresizingMaskIntoConstraints="NO" id="j9a-93-4yK">
+                                        <rect key="frame" x="0.0" y="0.0" width="338" height="338"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4L3-QE-m2w">
+                                        <rect key="frame" x="298" y="10" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="1s1-Yj-sQ7"/>
+                                            <constraint firstAttribute="height" constant="30" id="Vd2-nW-cWT"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.6588235294" green="0.4941176471" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" image="multiply" catalog="system"/>
+                                        <connections>
+                                            <action selector="popupcloseAction:" destination="sX9-hv-Ime" eventType="touchUpInside" id="9i1-m7-yun"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="j9a-93-4yK" firstAttribute="top" secondItem="nVl-p1-yLd" secondAttribute="top" id="5R4-fL-b5h"/>
+                                    <constraint firstAttribute="height" constant="338" id="9oB-HW-He6"/>
+                                    <constraint firstItem="j9a-93-4yK" firstAttribute="leading" secondItem="nVl-p1-yLd" secondAttribute="leading" id="UM1-UE-9L0"/>
+                                    <constraint firstItem="4L3-QE-m2w" firstAttribute="top" secondItem="nVl-p1-yLd" secondAttribute="top" constant="10" id="kyo-v5-bLH"/>
+                                    <constraint firstAttribute="trailing" secondItem="j9a-93-4yK" secondAttribute="trailing" id="n9M-qK-E2j"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9a-93-4yK" secondAttribute="bottom" id="qoq-8c-OOq"/>
+                                    <constraint firstAttribute="trailing" secondItem="4L3-QE-m2w" secondAttribute="trailing" constant="10" id="uLO-sO-KdW"/>
+                                    <constraint firstAttribute="width" constant="338" id="uc9-De-7p9"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nVl-p1-yLd" firstAttribute="centerX" secondItem="q12-hZ-Xcx" secondAttribute="centerX" id="0Ab-q7-D7x"/>
+                            <constraint firstItem="nVl-p1-yLd" firstAttribute="centerY" secondItem="q12-hZ-Xcx" secondAttribute="centerY" id="6LA-oE-26Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kFY-Hy-MCo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dO3-lO-iN5"/>
+                    <connections>
+                        <outlet property="dialogBoxView" destination="q12-hZ-Xcx" id="9Z2-md-qHk"/>
+                        <outlet property="qrimg" destination="j9a-93-4yK" id="ga7-JX-ISQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kl-d2-wTp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10001" y="-1753"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="My_Gallery-3" width="3000" height="3000"/>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+    </resources>
+</document>
